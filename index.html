@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VESPER — Lounge & Late Night</title>
+    <meta
+      name="description"
+      content="VESPER — a late-night lounge for cocktails, sound, and nights worth remembering. Upcoming events and reservations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top">VESPER</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#vibe">Vibe</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn btn-sm" href="#visit">Reserve</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav" hidden>
+      <a href="#vibe">Vibe</a>
+      <a href="#events">Events</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="#visit">Reserve a table</a>
+    </div>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=2000&q=80"
+            alt=""
+            width="2000"
+            height="1333"
+          />
+          <div class="hero-wash"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="brand">VESPER</p>
+          <h1>Nights that burn a little brighter.</h1>
+          <p class="lede">
+            Cocktails, low light, and a room that knows how to hold a crowd.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#events">See what’s on</a>
+            <a class="btn btn-ghost" href="#visit">Reserve</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section vibe" id="vibe">
+        <div class="section-inner">
+          <p class="eyebrow">The room</p>
+          <h2>Built for late arrivals and longer stays.</h2>
+          <p class="section-copy">
+            Dim amber light, a serious bar program, and a sound system that never
+            apologizes. Come for a Vesper. Stay for whatever the night becomes.
+          </p>
+        </div>
+        <div class="vibe-strip" aria-hidden="true">
+          <div class="vibe-panel">
+            <img
+              src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80"
+              alt=""
+            />
+          </div>
+          <div class="vibe-panel">
+            <img
+              src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=80"
+              alt=""
+            />
+          </div>
+          <div class="vibe-panel">
+            <img
+              src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section events" id="events">
+        <div class="section-inner">
+          <p class="eyebrow">Calendar</p>
+          <h2>What’s happening.</h2>
+          <p class="section-copy">
+            Live sets, tasting nights, and private takeovers. Tap an event for details.
+          </p>
+        </div>
+
+        <div class="events-board" role="list">
+          <article class="event is-open" role="listitem" data-event>
+            <button class="event-trigger" type="button" aria-expanded="true">
+              <time datetime="2026-08-07">Aug 07</time>
+              <span class="event-title">Neon Hour — DJ Maris</span>
+              <span class="event-meta">10PM · Floor</span>
+              <span class="event-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="event-body">
+              <p>
+                A late residence of deep house and chrome-edged disco. Guest list
+                opens at 9. Dress sharp.
+              </p>
+              <a class="text-link" href="#visit">Request a spot</a>
+            </div>
+          </article>
+
+          <article class="event" role="listitem" data-event>
+            <button class="event-trigger" type="button" aria-expanded="false">
+              <time datetime="2026-08-14">Aug 14</time>
+              <span class="event-title">Velvet Pour — Cocktail Lab</span>
+              <span class="event-meta">7PM · Bar</span>
+              <span class="event-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="event-body">
+              <p>
+                Four limited pours from our seasonal menu, paired with a short
+                talk from the bar team. Twenty seats.
+              </p>
+              <a class="text-link" href="#visit">Reserve a seat</a>
+            </div>
+          </article>
+
+          <article class="event" role="listitem" data-event>
+            <button class="event-trigger" type="button" aria-expanded="false">
+              <time datetime="2026-08-21">Aug 21</time>
+              <span class="event-title">Afterglow Sessions</span>
+              <span class="event-meta">11PM · Lounge</span>
+              <span class="event-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="event-body">
+              <p>
+                Live sax over a quiet electronic set. Soft lights, slow pours,
+                no rush to leave.
+              </p>
+              <a class="text-link" href="#visit">Join the list</a>
+            </div>
+          </article>
+
+          <article class="event" role="listitem" data-event>
+            <button class="event-trigger" type="button" aria-expanded="false">
+              <time datetime="2026-08-28">Aug 28</time>
+              <span class="event-title">Private Room Takeover</span>
+              <span class="event-meta">All night · Back room</span>
+              <span class="event-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="event-body">
+              <p>
+                Book the back room for birthdays, brand nights, or the kind of
+                gathering that shouldn’t be public.
+              </p>
+              <a class="text-link" href="#visit">Inquire</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section visit" id="visit">
+        <div class="section-inner">
+          <p class="eyebrow">Find us</p>
+          <h2>Come through.</h2>
+          <p class="section-copy">
+            Open Wed–Sun from 6PM. Kitchen until 11. Bar until late.
+          </p>
+        </div>
+
+        <div class="visit-grid">
+          <div class="visit-block">
+            <h3>Address</h3>
+            <p>418 Mercer Street<br />New York, NY 10012</p>
+          </div>
+          <div class="visit-block">
+            <h3>Contact</h3>
+            <p>
+              <a href="mailto:hello@vesperlounge.com">hello@vesperlounge.com</a><br />
+              <a href="tel:+12125550188">(212) 555-0188</a>
+            </p>
+          </div>
+          <div class="visit-block visit-cta">
+            <h3>Reservations</h3>
+            <p>Tables for two to twelve. Events and buyouts by request.</p>
+            <a class="btn" href="mailto:hello@vesperlounge.com?subject=Reservation">
+              Email to reserve
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="logo">VESPER</p>
+      <p class="footer-note">Lounge & late night · Est. 2024</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

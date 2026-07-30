@@ -238,13 +238,14 @@ button {
     calc(var(--header-h) + 1rem)
     clamp(1.25rem, 4vw, 3rem)
     clamp(2.5rem, 6vw, 4.5rem);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-media {
   position: absolute;
   inset: 0;
   z-index: 0;
+  overflow: hidden;
 }
 
 .hero-media img {
@@ -269,22 +270,26 @@ button {
 
 .brand {
   margin: 0 0 1rem;
-  width: fit-content;
-  max-width: 100%;
+  width: max-content;
+  max-width: none;
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 9.2vw, 6.75rem);
+  font-size: clamp(2.4rem, 8.5vw, 6.5rem);
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: 0.05em;
-  padding-right: 0.08em; /* letter-spacing doesn't expand the gradient clip box */
+  line-height: 1.1;
+  letter-spacing: 0;
   white-space: nowrap;
-  overflow: visible;
+  filter: drop-shadow(0 0 28px var(--glow));
+  animation: brand-in 1.1s var(--ease) both;
+}
+
+.brand span {
+  display: inline-block;
+  padding: 0.06em 0.18em 0.08em 0;
   background: linear-gradient(180deg, #fff7ef 10%, var(--gold) 55%, var(--ember) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 0 28px var(--glow));
-  animation: brand-in 1.1s var(--ease) both;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero h1 {
